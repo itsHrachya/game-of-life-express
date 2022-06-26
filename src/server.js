@@ -19,17 +19,17 @@ seasonIndex = 0;
 seasonName = "Spring";
 
 seasonThemes = [
-    new SeasonTheme("#0ac900", "#e1ff00", "#ff0066", "#0341fc", "#fc7703", "#690000"), // Spring
-    new SeasonTheme("#03a800", "#6ead00", "#fc0303", "#1226ff", "#fc7703", "#690000"), // Summer
-    new SeasonTheme("#b3ee3a", "#f4fc03", "#db0016", "#034efc", "#fc7703", "#690000"), // Autumn
-    new SeasonTheme("#fff0f0", "#f4fc03", "#b50012", "#0318fc", "#fc7703", "#690000") // Winter
+    new SeasonTheme("#0ac900", "#e1ff00", "#ff0066", "#0341fc", "#fc7703", "#690000"),
+    new SeasonTheme("#03a800", "#6ead00", "#fc0303", "#1226ff", "#fc7703", "#690000"),
+    new SeasonTheme("#b3ee3a", "#f4fc03", "#db0016", "#034efc", "#fc7703", "#690000"),
+    new SeasonTheme("#fff0f0", "#f4fc03", "#b50012", "#0318fc", "#fc7703", "#690000")
 ];
 
 gameManagers = [
-    new GameManager(2, 30, 3, 2, 1), // Spring
-    new GameManager(3, 25, 2, 4, 2), // Summer
-    new GameManager(1, 20, 1, 6, 3), // Autumn
-    new GameManager(0, 20, 2, 4, 0) // Winter
+    new GameManager(2, 30, 3, 2, 1),
+    new GameManager(3, 25, 2, 4, 2),
+    new GameManager(1, 20, 1, 6, 3),
+    new GameManager(0, 20, 2, 4, 0)
 ];
 
 app.use(express.static("."));

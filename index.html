@@ -3,87 +3,23 @@
     <meta charset="utf8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/style.css">
-    <link rel="icon" type="image/png" href="/src/resources/game-controller.png">
     <script src="./libraries/p5.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="./src/script.js"></script>
     <title>Tumo Programming 3</title>
 </head>
 <body>
     <div class="main">
-        <div class="header">
-            <h2>Programming III Hrachya Galstyan Yerevan</h2>
-        </div>
-        <div class="description">
-            <div class="table-container">
-                <table class="game">
-                    <tr>
-                        <th scope="col" style="width: 30px;">#</th>
-                        <th scope="col">Color</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Total Count</th>
-                        <th scope="col">Current Count</th>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width: 30px;">1</td>
-                        <td scope="row" style="background-color:#0ac900;"></td>
-                        <td scope="row">Grass</td>
-                        <td id="grassCount">0</td>
-                        <td id="currentGrassCount">0</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width: 30px;">2</td>
-                        <td scope="row" style="background-color:#e1ff00;"></td>
-                        <td scope="row">Grass Eater</td>
-                        <td id="grassEaterCount">0</td>
-                        <td id="currentGrassEaterCount">0</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width: 30px;">3</td>
-                        <td scope="row" style="background-color:#ff0066;"></td>
-                        <td scope="row">Predator</td>
-                        <td id="predatorCount">0</td>
-                        <td id="currentPredatorCount">0</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width: 30px;">4</td>
-                        <td scope="row" style="background-color:#0341fc;"></td>
-                        <td scope="row">Destroyer</td>
-                        <td id="destroyerCount">0</td>
-                        <td id="currentDestroyerCount">0</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width: 30px;">5</td>
-                        <td scope="row" style="background-color:#fc7703;"></td>
-                        <td scope="row">Grenade</td>
-                        <td id="grenadeCount">0</td>
-                        <td id="currentGrenadeCount">0</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" style="width: 30px;">6</td>
-                        <td scope="row" style="background-color:#690000;"></td>
-                        <td scope="row">Fire</td>
-                        <td id="fireCount">0</td>
-                        <td id="currentFireCount">0</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="events-container">
-                <h4>Events Panel</h4>
-                <a class="event-button" onclick="restart()">Restart</a>
-                <a class="event-button" onclick="addGrass()">Add Grass</a>
-                <a class="event-button" onclick="addGrassEater()">Add Grass Eater</a>
-                <a class="event-button" onclick="addPredator()">Add Predator</a>
-                <a class="event-button" onclick="changeSeason()">Change Season</a>
-            </div>
             <div class="info-container">
                 <h4 id ="weather">Season: Spring</h4>
-                <svg width="300" height="200"></svg>
             </div>
-        </div>
-        <div class="footer" id="footer">
-
+            <div class="events-container">
+                <a onclick="restart()">Restart</a>
+                <a onclick="addGrass()">Add Grass</a>
+                <a onclick="addGrassEater()">Add Grass Eater</a>
+                <a onclick="addPredator()">Add Predator</a>
+                <a onclick="changeSeason()">Change Season</a>
+            </div>
         </div>
     </div>
 </body>
